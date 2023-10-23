@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8ecf8;
+}
+
+.container{
+    margin: 0 6rem;
+}
+
+.container .cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .cards .card{
+    border: 1px solid black;
+    width: fit-content;
+    transform: scale(0.925);
+    border: 1px solid #d8e8fd;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow:
+    0px 3.3px 5.3px -5px rgba(0, 0, 0, 0.048),
+    0px 11.2px 17.9px -5px rgba(0, 0, 0, 0.071),
+    0px 50px 80px -5px rgba(0, 0, 0, 0.12)
+    ;
+    transition: all 300ms 0s ease;
+    cursor: pointer;
+}
+
+.container .cards .card:hover{
+    box-shadow:
+    0px 3.3px 5.3px -5px rgba(0, 0, 0, 0.078),
+    0px 11.2px 17.9px -5px rgba(0, 0, 0, 0.116),
+    0px 50px 80px -5px rgba(0, 0, 0, 0.19)
+  ;
+}
+
+.container .cards .card:nth-child(2){
+    transform: scale(1.075);
+    z-index: 1;
+    background-image: linear-gradient(to right bottom, #654ec1, #25175d);
+}
+
+.container .cards .card .wrapper{
+    margin: 2rem;
+}
+
+.container .cards .card .wrapper .logo{
+    display: flex;
+    align-items: center;
+    background-color: #bcacff;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 0.85rem;
+    border: 1px solid #f1f1f1;
+}
+
+.container .cards .card .wrapper .logo i{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+.container .cards .card .wrapper .mini-heading{
+    background-color: #e7e1fc;
+    width: fit-content;
+    padding: 4px 14px;
+    border-radius: 100px;
+    margin-bottom: 0.6rem;
+}
+
+.container .cards .card:nth-child(2) .wrapper .mini-heading{
+    background-color: #f8f6fe;
+}
+
+.container .cards .card .wrapper .mini-heading h4{
+    font-size: 16px;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #2600fb, #b9a8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container .cards .card .wrapper .price{
+    margin-bottom: 1.5rem;
+}
+
+.container .cards .card:nth-child(2) .wrapper .price h1{
+    color: #fff;
+}
+
+.container .cards .card .wrapper .price h1{
+    font-weight: 600;
+    color: #333;
+}
+
+.container .cards .card .wrapper .desc{
+    margin-bottom: 1.35rem;
+    max-width: 300px;
+}
+
+.container .cards .card:nth-child(2) .wrapper .desc p{
+    color: #fff;
+}
+
+.container .cards .card .wrapper .desc p{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .cards .card .wrapper .details {
+    margin-bottom: 1rem;
+}
+
+.container .cards .card:nth-child(2) .wrapper .details li i{
+    background-color: #d1c3fe;
+    color: #000;
+}
+
+.container .cards .card:nth-child(2) .wrapper .details li p{
+    color: white;
+}
+
+.container .cards .card:nth-child(3) .wrapper .details li:nth-child(1) p{
+    background-image: linear-gradient(to right, #1200d6 38%, #b3a2f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .cards .card:nth-child(3) .wrapper .details li:nth-child(2) p{
+    background-image: linear-gradient(to right, #1200d6 38%, #b3a2f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container .cards .card .wrapper .details li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-bottom: 0.85rem;
+}
+
+.container .cards .card .wrapper .details li i{
+    background-color: #7317fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #fff;
+    padding: 4px;
+}
+
+.container .cards .card .wrapper .details li p{
+    font-size: 15px;
+}
+
+.container .cards .card .wrapper .get-started{
+    display: flex;
+    align-items: center;
+}
+
+.container .cards .card .wrapper .get-started .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 6px 22px;
+    border-radius: 100px;
+    border: none;
+    background-color: #e7e1fc;
+    cursor: pointer;
+    color: #7317fd;
+    font-weight: 500;
+    transition: all 300ms 0s ease;
+}
+
+.container .cards .card .wrapper .get-started .btn:hover{
+    gap: 2.5rem;
+}
+
+.container .cards .card:nth-child(2) .wrapper .get-started .btn{
+    background-image: linear-gradient(to right, #5530f5, #967cfd, #5530f5);
+    color: #fff;
+    font-weight: 400;
+}
+
+.container .cards .card .wrapper .get-started .btn i{
+    font-size: 20px;
+}
+
+.container .cards .card .wrapper .get-started .btn p{
+    font-size: 14px;
+}
