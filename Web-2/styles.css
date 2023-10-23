@@ -1,0 +1,437 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+:root{
+    --primary-font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+    max-height: 100%;
+}
+
+.content-container{
+    background-image: url('assets/bg-image-gd.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+.main-container{
+    padding: 2.25rem 3rem;
+}
+
+.main-container .navbar nav{
+    display: flex;
+    align-items: center;
+}
+
+.main-container .navbar nav ul{
+    display: flex;
+    align-items: center;
+}
+
+.main-container .navbar nav .logo{
+    display: flex;
+    align-items: center;
+    margin-right: 4rem;
+}
+
+.main-container .navbar nav .logo .dot-logo{
+    width: 30px;
+    height: 30px;
+    background-color: #0087e0;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+.main-container .navbar nav .logo p{
+    font-family: var(--primary-font-family);
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main-container .navbar nav .logo p span{
+    color: #0087e0;
+}
+
+.main-container .navbar nav ul li{
+    list-style: none;
+    padding: 0 2rem;
+}
+
+.main-container .navbar nav ul li:hover a{
+    color: rgb(190, 190, 190);
+}
+
+.main-container .navbar nav ul li a{
+    text-decoration: none;
+    color: grey;
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 300ms 0s ease;
+}
+
+
+/* ==== LOGIN SECTION ==== */
+.main-container .forms-section{
+    margin-top: 6.5rem;
+    width: 420px;
+    margin-left: 2.5rem;
+}
+
+.main-container .forms-section .mini-heading{
+    margin-bottom: -0.8rem;
+}
+
+.main-container .forms-section .mini-heading h4{
+    font-family: var(--primary-font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: grey;
+}
+
+.main-container .forms-section .main-heading h1{
+    font-family: var(--primary-font-family);
+    font-weight: 700;
+    color: #fff;
+}
+
+.main-container .forms-section .main-heading h1 span{
+    color: #0087e0;
+    font-size: 52px;
+}
+
+.main-container .forms-section .ask-login p{
+    font-family: var(--primary-font-family);
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+}
+
+.main-container .forms-section .ask-login p a{
+    text-decoration: none;
+    color: #0087e0;
+}
+
+.main-container .forms-section form{
+    margin-top: 1.85rem;
+}
+
+.main-container .forms-section form .name-row{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-container .forms-section form .name-row .first-name p, .last-name p{
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 0.2rem;
+}
+
+.main-container .forms-section form .name-row .first-name .f-name, .last-name .l-name{
+    padding: 17px 16px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    background-color: #323644;
+    color: #fff;
+    width: 100%;
+    font-family: var(--primary-font-family);
+    border: 2px solid transparent;
+    transition: all 300ms 0s ease;
+}
+
+.main-container .forms-section form .name-row .first-name .f-name:focus, .last-name .l-name:focus{
+    border: 2px solid #0087e0;
+}
+
+.main-container .forms-section form .name-row .first-name .f-name:focus ~ i, .last-name .l-name:focus ~ i{
+    color: rgb(168, 168, 168);
+}
+
+.main-container .forms-section form .name-row .first-name .f-name:hover ~ i{
+    color: rgb(168, 168, 168);
+}
+
+.main-container .forms-section form .name-row .last-name .l-name:hover ~ i{
+    color: rgb(168, 168, 168);
+}
+
+.main-container .forms-section form .name-row .first-name .f-name::placeholder, .last-name .l-name::placeholder{
+    font-size: 18px;
+    color: #fff;
+}
+
+.main-container .forms-section form .name-row .first-name i{
+    font-size: 20px;
+    color: grey;
+    position: absolute;
+    top: 356px;
+    left: 248px;
+    transition: all 300ms 0s ease;
+}
+
+.main-container .forms-section form .name-row .last-name i{
+    font-size: 20px;
+    color: grey;
+    position: absolute;
+    top: 356px;
+    left: 468px;
+    transition: all 300ms 0s ease;
+}
+
+.main-container .forms-section form .email-row, .pass-row{
+    margin-top: 0.9rem;
+}
+
+.main-container .forms-section form .email-row p{
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 0.2rem;
+}
+
+.main-container .forms-section form .email-row .email{
+    padding: 17px 16px;
+    border-radius: 13px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #323644;
+    color: #fff;
+    width: 100%;
+    font-family: var(--primary-font-family);
+    border: 2px solid transparent;
+    transition: all 300ms 0s ease;
+} 
+
+.main-container .forms-section form .email-row .email:focus{
+    border: 2px solid #0087e0;
+}
+
+.main-container .forms-section form .email-row .email:focus ~ i{
+    color: rgb(168, 168, 168);
+}
+
+.main-container .forms-section form .email-row .email:hover ~ i{
+    color: rgb(168, 168, 168);
+}
+
+.main-container .forms-section form .email-row i{
+    font-size: 20px;
+    color: grey;
+    position: absolute;
+    top: 452px;
+    left: 468px;
+    transition: all 300ms 0s ease;
+}
+
+.main-container .forms-section form .pass-row{
+    margin-bottom: 2.5rem;
+}
+
+.main-container .forms-section form .pass-row p{
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 0.2rem;
+}
+
+.main-container .forms-section form .pass-row .pass{
+    padding: 17px 16px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    background-color: #323644;
+    color: #fff;
+    width: 100%;
+    font-family: var(--primary-font-family);
+    border: 2px solid transparent;
+    transition: all 300ms 0s ease;
+}
+
+.main-container .forms-section form .pass-row .pass:focus{
+    border: 2px solid #0087e0;
+}
+
+.main-container .forms-section form .pass-row .pass:focus ~ i{
+    color: rgb(168, 168, 168);
+}
+
+.main-container .forms-section form .pass-row .pass:hover ~ i{
+    color: rgb(168, 168, 168);
+}
+
+.main-container .forms-section form .pass-row i{
+    font-size: 20px;
+    color: grey;
+    position: absolute;
+    top: 548px;
+    left: 468px;
+    cursor: pointer;
+    transition: all 300ms 0s ease;
+}
+
+.main-container .forms-section .create-acc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.main-container .forms-section .create-acc .btn{
+    font-family: var(--primary-font-family);
+    width: 100%;
+    padding: 14px 16px;
+    outline: none;
+    border: none;
+    background-color: #0087e0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 50px;
+    box-shadow: 0px 4px 25px -10px rgba(0, 134, 224, 0.8);
+    transition: all 300ms 0s ease;
+    cursor: pointer;
+}
+
+.main-container .forms-section .create-acc .btn:hover{
+    background-color: rgb(0, 90, 150);
+    box-shadow: 0px 4px 25px -10px rgba(0, 90, 150, 0.8);
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media (max-width: 768px) {
+    .main-container .navbar nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .main-container .forms-section {
+        margin-top: 6.5rem;
+        width: 420px;
+        margin-left: 0rem;
+    }
+    .main-container .forms-section form .name-row .first-name i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 356px;
+        left: 208px;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .forms-section form .name-row .last-name i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 356px;
+        left: 428px;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .forms-section form .email-row i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 452px;
+        left: 428px;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .forms-section form .pass-row i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 548px;
+        left: 428px;
+        cursor: pointer;
+        transition: all 300ms 0s ease;
+    }
+}
+@media (max-width: 568px) {
+    .main-container .navbar nav .logo p {
+        font-family: var(--primary-font-family);
+        font-size: 17px;
+        font-weight: 700;
+        color: #fff;
+    }
+    .main-container .navbar nav ul li a {
+        text-decoration: none;
+        color: grey;
+        font-family: var(--primary-font-family);
+        font-size: 13px;
+        font-weight: 500;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .forms-section .mini-heading h4 {
+        font-family: var(--primary-font-family);
+        font-weight: 600;
+        font-size: 13px;
+        color: grey;
+    }
+    .main-container .forms-section .main-heading h1 {
+        font-family: var(--primary-font-family);
+        font-weight: 700;
+        color: #fff;
+        font-size: 29px
+    }
+    .main-container .forms-section .main-heading h1 span {
+        color: #0087e0;
+        font-size: 49px;
+    }
+    .main-container .forms-section .ask-login p {
+        font-family: var(--primary-font-family);
+        font-size: 14px;
+        font-weight: 400;
+        color: grey;
+    }
+    .main-container .forms-section form .name-row .first-name i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 342px;
+        left: 210px;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .forms-section form .name-row .last-name i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 344px;
+        left: 428px;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .forms-section form .email-row i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 438px;
+        left: 428px;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .forms-section form .pass-row i {
+        font-size: 20px;
+        color: grey;
+        position: absolute;
+        top: 534px;
+        left: 428px;
+        cursor: pointer;
+        transition: all 300ms 0s ease;
+    }
+    .main-container .navbar nav ul li {
+        list-style: none;
+        padding: 0 1rem;
+    }
+} 
