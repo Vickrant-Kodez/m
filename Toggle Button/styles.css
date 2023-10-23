@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.button{
+    transform: scale(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 140px;
+    height: 70px;
+    background-color: #9ee3fb;
+    border: 7px solid #86c3d7;
+    border-radius: 100px;
+    transition: all 400ms 0s ease;
+    cursor: pointer;
+}
+
+.button::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('assets/sun.png');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    left: 4.25%;
+    transform: rotate(0deg);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.button.dark::before{
+    left: 56%;
+    background-image: url('assets/moon.png');
+    background-position: center;
+    background-size: cover;
+    transform: rotate(360deg);
+}
+
+.button.dark{
+    border: 7px solid #1c1c1c;
+    background-color:#3c4145;
+}
