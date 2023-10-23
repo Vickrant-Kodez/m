@@ -1,0 +1,767 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.75rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#login{
+    border: 1px solid rgb(151, 151, 151);
+    padding: 0.5rem 1.25rem;    
+    border-radius: 30px;
+}
+
+#getstarted{
+    border: 1px solid rgb(0, 0, 0);
+    background-color: black;
+    color: white;
+    padding: 0.5rem 1.25rem;    
+    border-radius: 50px;
+}
+
+.cta{
+    display: grid;
+    grid-template-rows: repeat(1, 2fr);
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 0;
+}
+
+#youremail{
+    border: 1px solid black;
+    padding: 0.75rem 15rem 0.75rem 1.2rem;
+    border-radius: 50px;
+}
+
+.cta-heading h1{
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 1rem;
+    line-height: 1.3;
+}
+
+.cta-sub-heading h4{
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-right: -0.2rem
+}
+
+.button-container h4{
+    padding-right: 3rem;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.button-container h4 i{
+    padding-right: 1.1rem;
+    font-size: 15px;
+}
+
+#signup{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 0.75rem 2.25rem;
+    border-radius: 50px;
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+.featured-plans{
+    margin-top: -2rem;
+    padding: 0 5rem;
+}
+
+.featured-plans .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.featured-plans .text h2{
+    font-size: 30px;
+}
+
+.featured-plans .text h3{
+    font-size: 22px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.feature-box-container{
+    padding: 2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.2rem;
+    width: auto;
+}
+
+/*<<<<<<<<<< BOX-1 >>>>>>>>>> */
+
+.box-1{
+    border: 1px solid transparent;
+    background-color: #5ecca0;
+    border-radius: 20px;
+}
+
+.box-1 .texts {
+    padding: 1.5rem 1.5rem 1.5em 1.5rem;
+}
+
+.box-1 .texts .mini-heading h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    color: #396654;
+    font-weight: 600;
+}
+
+.box-1 .texts .main-heading h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    margin-top: .5rem;
+}
+
+
+.box-1 .texts .para p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.hr-1{
+    width: 100%;
+    background: #3eb483;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.box-1 .texts .years h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #396654;
+    margin-bottom: 0.35rem;
+}
+
+.rate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rate .arsquare{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #202020;
+    color: white;
+    padding: .25rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+/*<<<<<<<<<< BOX-2 >>>>>>>>>> */
+
+.box-2{
+    border: 1px solid transparent;
+    background-color: #0a0a0a;
+    border-radius: 20px;
+}
+
+.box-2 .texts {
+    color: white;
+    padding: 1.5rem 1.5rem 1.5em 1.5rem;
+}
+
+.box-2 .texts .mini-heading h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    color: #b9b9b9;
+    font-weight: 600;
+}
+
+.box-2 .texts .main-heading h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    margin-top: .5rem;
+    font-weight: 600;
+}
+
+
+.box-2 .texts .para p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.hr-2{
+    width: 100%;
+    background: #5c5c5c;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.box-2 .texts .years h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 0.35rem;
+}
+
+/*<<<<<<<<<< BOX-3 >>>>>>>>>> */
+
+.box-3{
+    border: 1px solid transparent;
+    background-color: #cb9bfa;
+    border-radius: 20px;
+}
+
+
+.box-3 .texts {
+    padding: 1.5rem 1.5rem 1.5em 1.5rem;
+}
+
+.box-3 .texts .mini-heading h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    color: #42384b;
+    font-weight: 600;
+}
+
+.box-3 .texts .main-heading h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    margin-top: .5rem;
+}
+
+
+.box-3 .texts .para p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    color: black;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.hr-3{
+    width: 100%;
+    background: #b480e6;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.box-3 .texts .years h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #42384b;
+    margin-bottom: 0.35rem;
+}
+
+/*<<<<<<<<<< BOX-4 >>>>>>>>>> */
+
+.box-4{
+    border: 1px solid transparent;
+    background-color: #f8fd91;
+    border-radius: 20px;
+}
+
+.box-4 .texts {
+    padding: 1.5rem 1.5rem 1.5em 1.5rem;
+}
+
+.box-4 .texts .mini-heading h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 12px;
+    color: #828556;
+    font-weight: 600;
+}
+
+.box-4 .texts .main-heading h2{
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px;
+    margin-top: .5rem;
+}
+
+
+.box-4 .texts .para p{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    color: black;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.hr-4{
+    width: 100%;
+    background: #d7dc7d;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1rem;
+}
+
+.box-4 .texts .years h4{
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #828556;
+    margin-bottom: 0.35rem;
+}
+
+.rate .arsquare-2{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding: .25rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.hr-down{
+    height: .5px;
+    background: #b1b1b1;
+    margin: 0 5rem;
+}
+
+.landing-footer{
+    padding: 0 5rem;
+}
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text a, p{
+    text-decoration: none;
+    list-style: none;  
+    padding-right: 1.5rem;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.next-arrow i{
+    font-size: 35px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 0.2rem 0.2rem;
+    cursor: pointer;
+}
+
+/*=============== MEDIA BREAKPOINT ===============*/
+
+@media(max-width:1200px){
+
+    .nav-container {
+        padding: 1rem 3rem;
+    }
+
+    .featured-plans {
+        padding: 0 3rem;
+    }
+
+    .feature-box-container {
+        padding: 2rem 3rem;
+    }
+
+    .hr-down {
+        margin: 0 3rem;
+    }
+
+    .landing-footer {
+        padding: 0 3rem;
+    }
+
+}
+
+@media(max-width:992px){
+
+    .nav-container {    
+        padding: 1rem 2rem;
+    }
+
+    #login {
+        font-size: 15px;
+    }
+
+    #getstarted {
+        font-size: 15px;
+    }
+
+    .cta-heading h1 {
+        font-size: 50px;
+    }
+
+    .cta-sub-heading h4 {
+        font-size: 20px;
+    }
+
+    .button-container {
+        margin-top: 1.5rem;
+        margin-right: -0.2rem;
+    }
+
+    .button-container h4 {
+        font-size: 15px;
+    }
+
+    .featured-plans {
+        padding: 0 2rem;
+    }
+
+    .featured-plans .text h2 {
+        font-size: 25px;
+    }
+
+    .featured-plans .text h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .feature-box-container {
+        padding: 2rem 2rem;
+    }
+
+    .box-1 .texts {
+        padding: 1rem 1rem;
+    }
+
+    .box-1 .texts .mini-heading h4 {
+        font-size: 10px;
+    }
+
+    .box-1 .texts .main-heading h2 {
+        font-size: 20px;
+    }
+
+    .box-1 .texts .para p {
+        font-size: 15px;
+        line-height: 1.25;
+        font-weight: 300;
+    }
+
+    .box-1 .texts .years h4 {
+        font-size: 12px;
+    }
+
+    .box-1 .texts .rate h2{
+        font-size: 22px;
+    } 
+
+    /*<<<<<<<<<<< BOX - 2 MEDIA QUERIES >>>>>>>>>>>>*/
+    .box-2 .texts {
+        padding: 1rem 1rem;
+    }
+
+    .box-2 .texts .mini-heading h4 {
+        font-size: 10px;
+    }
+
+    .box-2 .texts .main-heading h2 {
+        font-size: 20px;
+    }
+
+    .box-2 .texts .para p {
+        font-size: 15px;
+        line-height: 1.25;
+        font-weight: 200;
+    }
+
+    .box-2 .texts .years h4 {
+        font-size: 12px;
+    }
+
+    .box-2 .texts .rate h2{
+        font-size: 22px;
+    } 
+
+    /*<<<<<<<<<<<< BOX 3 MEDIA QUERIES >>>>>>>>>>>*/
+    .box-3 .texts {
+        padding: 1rem 1rem;
+    }
+
+    .box-3 .texts .mini-heading h4 {
+        font-size: 10px;
+    }
+
+    .box-3 .texts .main-heading h2 {
+        font-size: 20px;
+    }
+
+    .box-3 .texts .para p {
+        font-size: 15px;
+        line-height: 1.25;
+        font-weight: 300;
+    }
+
+    .box-3 .texts .years h4 {
+        font-size: 12px;
+    }
+
+    .box-3 .texts .rate h2{
+        font-size: 22px;
+    } 
+
+    /*<<<<<<<<<<<< BOX 4 MEDIA QUERIES >>>>>>>>>>>*/
+    .box-4 .texts {
+        padding: 1rem 1rem;
+    }
+
+    .box-4 .texts .mini-heading h4 {
+        font-size: 10px;
+    }
+
+    .box-4 .texts .main-heading h2 {
+        font-size: 20px;
+    }
+
+    .box-4 .texts .para p {
+        font-size: 15px;
+        line-height: 1.25;
+        font-weight: 300;
+    }
+
+    .box-4 .texts .years h4 {
+        font-size: 12px;
+    }
+
+    .box-4 .texts .rate h2{
+        font-size: 22px;
+    } 
+
+    .hr-down {
+        margin: 0 2rem;
+    }
+
+    .landing-footer {
+        padding: 0 2rem;
+    }
+
+    .footer-container .text a, p {
+        font-size: 15px;
+        padding-right: 1.25rem;
+    }
+
+    .next-arrow i {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:768px){
+
+    .nav-container {
+        padding: 1rem 1.25rem;
+    }
+
+    #login {
+        font-size: 15px;
+    }
+    
+    #getstarted {
+        font-size: 15px;
+    }
+
+    .cta-heading h1 {
+        font-size: 40px;
+    }
+
+    .cta-sub-heading h4 {
+        font-size: 20px;
+    }
+
+    .button-container {
+        margin-top: 1.75rem;
+    }
+
+    .button-container h4 {
+        font-size: 15px;
+    }
+
+    .featured-plans {
+        padding: 0 1.25rem;
+    }
+
+    .featured-plans .text h2 {
+        font-size: 25px;
+    }
+
+    .featured-plans .text h3 {
+        font-size: 20px;
+    }
+
+    .feature-box-container {
+        padding: 2rem 1.25rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1.25rem;
+        column-gap: 1.25rem;
+        width: auto;
+    }
+
+    .hr-down {
+        margin: 0 1.25rem;
+    }
+
+    .landing-footer {
+        padding: 0 1.25rem;
+    }
+
+    .footer-container {
+        margin: 0.5rem 0;
+    }
+    
+    .text a, p {
+        padding-right: 1rem;
+        font-size: 15px;
+    }
+
+    .next-arrow i {
+        font-size: 25px;
+        padding: 0.2rem 0.2rem;
+    }
+
+}
+
+@media(max-width:576px){
+
+    #login {
+        font-size: 12px;
+    }
+
+    #getstarted {
+        font-size: 12px;
+    }
+
+    .cta-heading h1 {
+        font-size: 30px;
+        padding-bottom: 0.7rem;
+    }
+
+    .cta-sub-heading h4 {
+        font-size: 15px;
+    }
+
+    .button-container {
+        margin-top: 1.25rem;
+    }
+
+    #youremail {
+        padding: 0.75rem 6.5rem 0.75rem 1.2rem;
+    }
+
+    #signup {
+        padding: 0.75rem 1.75rem;
+    }
+
+    .button-container h4 {
+        font-size: 12px;
+    }
+
+    .featured-plans .text h2 {
+        font-size: 20px;
+    }
+
+    .featured-plans .text h3 {
+        font-size: 18px;
+    }
+
+    .box-1 .texts .para p {
+        font-size: 13px;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+
+    .box-2 .texts .para p {
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 200;
+    }
+
+
+    .box-3 .texts .para p {
+        font-size: 12px;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+
+
+    .box-4 .texts .para p {
+        font-size: 13px;
+        line-height: 1.4;
+        font-weight: 300;
+    }
+
+    .footer-container .text a, p {
+        font-size: 13px;
+        padding-right: 1rem;
+    }
+
+    .next-arrow i {
+        font-size: 22px;
+        padding: 0.2rem 0.2rem;
+    }
+}
