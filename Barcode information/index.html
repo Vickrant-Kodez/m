@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+
+    <div class="main">
+        <h1>POS</h1>
+
+        <!-- To find info about a serial number -->
+        <div class="lookup-container">
+            <h2>Serial Number Details</h2>
+            <div class="lookup">
+                <form>
+                    <label>
+                        <p>Serial Number</p>
+                        <input type="text" value="" placeholder="Enter Your Serial Number..." class="serialNumber-search" id="row-1">
+                    </label>
+                    <label>
+                        <p>Customer Name</p>
+                        <input type="text" value="" placeholder="Customer Name" readonly class="customerName-search" id="row-2">
+                    </label>
+                    <label>
+                        <p>Invoice Number</p>
+                        <input type="text" value="" placeholder="Invoice Number" readonly class="invoiceNumber-search" id="row-3">
+                    </label>
+                    <label>
+                        <p>Date</p>
+                        <input type="text" value="" placeholder="Date" readonly class="date-search" id="row-4">
+                    </label>
+                </form>
+                <button class="search-btn" onclick="lookupBarcode()">Search</button>
+            </div>
+        </div>
+
+        <!-- To add new serial number and info -->
+        <div class="add-serialNumber-container">
+            <h2>Add New Serial Number</h2>
+            <div class="add-serialNumber">
+                <form>
+                    <label>
+                        <p>Serial Number</p>
+                        <input type="text" placeholder="Enter Your Serial Number" class="serialNumber-input" id="col-5">
+                    </label>
+                    <label>
+                        <p>Customer Name</p>
+                        <input type="text" placeholder="Enter Your Customer Name" class="customerName-input" id="col-6">
+                    </label>
+                    <label>
+                        <p>Invoice Number</p>
+                        <input type="text" placeholder="Enter Your Invoice Number" class="invoiceNumber-input" id="col-7">
+                    </label>
+                </form>
+                <button class="add-btn" onclick="updateBarcode()">Add</button>
+            </div>
+        </div>
+
+        <!-- A table database to store info -->
+        <div class="database">
+            <table border="1" class="database-table">
+                <thead>
+                    <tr>
+                        <th>Serial Number</th>
+                        <th>Customer Name</th>
+                        <th>Invoice Number</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody class="t-body">
+                    <!-- Rows will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
